@@ -1,0 +1,46 @@
+Although I haven't develop the backend of it but here are the model details with different DB's
+
+
+MONGODB
+
+
+
+company {
+  _id
+  name
+  url
+  directNumber
+  courierCompanies[{
+    _id
+    companyName
+    ReferenceNumber
+  }]
+  shippingAddresses[{
+    _id
+    // diffrerent fields according to it
+  }]
+}
+
+
+
+SQL
+
+
+Company Table
+  id
+  name
+  url
+  directNumber
+
+courierCompanies Table
+  id
+  company_id as foriegn key
+  companyName
+  ReferenceNumber
+
+shippingAddresses Table
+  id
+  company_id as foriegn key
+  address
+  street
+  ... fields
