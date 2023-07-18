@@ -160,8 +160,8 @@ import {
   AutoCompleteSuggestion
 } from '../shared'
 import VueGoogleAutocomplete from "vue-google-autocomplete";
-import { countriesList, timeSlotsStart, timeSlotsEnd } from '../../utils/constants'
-import type { CompanyShippingFormState, AddressListState } from '../../types/company-form'
+import { countriesList, timeSlotsStart, timeSlotsEnd } from '@/utils/constants'
+import type { CompanyShippingFormState, AddressListState } from '@/types/company-form'
 
 interface AddFormType {
   open: boolean

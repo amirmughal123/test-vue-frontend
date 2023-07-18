@@ -27,7 +27,7 @@
 </template>
 <script lang="ts" setup>
 
-import type { companyState, CompanyShippingFormState } from '../../types/company-form'
+import type { companyState, CompanyShippingFormState } from '@/types/company-form'
 
 const props = defineProps<{
   companies: Array<companyState>

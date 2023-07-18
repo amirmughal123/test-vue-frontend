@@ -64,12 +64,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, computed, defineProps } from 'vue';
+import { defineComponent, reactive, computed } from 'vue';
 import { MinusCircleOutlined, PlusOutlined, PlusCircleFilled, DeleteOutlined } from '@ant-design/icons-vue';
-import { courierList } from '../../utils/constants'
+import { courierList } from '@/utils/constants'
 
 import { InputField, PhoneNumberWithCode, MyForm, DropDownField } from '../shared'
-import type { CompanyFormState } from '../../types/company-form'
+import type { CompanyFormState } from '@/types/company-form'
 
 export default defineComponent({
   props:["handleCompanyForm"],

@@ -15,7 +15,7 @@
             <a-alert v-if="errorMessage" :message="errorMessage" type="error" style="margin-top: 10px;" />
           </a-tab-pane>
           <a-tab-pane key="2" tab="Shipping details" disabled>
-              <ShippingTab :closeModal="closeModal" :handleShippingFormback="handleShippingFormback" :handleCompanyAddresses="handleCompanyAddresses"/>
+              <ShippingTab :handleShippingFormback="handleShippingFormback" :handleCompanyAddresses="handleCompanyAddresses"/>
             </a-tab-pane>
         </a-tabs>
       </Modal>
@@ -28,8 +28,8 @@ import { defineComponent, reactive, ref, onMounted } from 'vue'
 import CompanyDetailTab from './CompanyDetail.vue'
 import ShippingTab from './ShippingDetail.vue'
 import { Modal, List } from '../shared'
-import type { HomeTabsState, companyListsState } from '../../types/home-container'
-import type { CompanyFormState, companyState } from '../../types/company-form'
+import type { HomeTabsState, companyListsState } from '@/types/home-container'
+import type { CompanyFormState, companyState } from '@/types/company-form'
 
 export default defineComponent({
   setup() {
